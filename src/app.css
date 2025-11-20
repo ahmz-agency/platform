@@ -1,0 +1,223 @@
+:root {
+    /* Colors - Trustable Modern Dark (Slate/Blue/Emerald) */
+    --bg-color: #020617;
+    /* Slate 950 - Very Dark Blue */
+    --bg-secondary: #0F172A;
+    /* Slate 900 - Slightly Lighter for cards */
+
+    --text-color: #F8FAFC;
+    /* Slate 50 - High Contrast White */
+    --text-muted: #CBD5E1;
+    /* Slate 300 - More readable secondary text for accessibility */
+
+    /* Trustable Accents - High Contrast */
+    --accent-primary: #3B82F6;
+    /* Blue 500 */
+    --accent-primary-hover: #2563EB;
+    /* Blue 600 */
+
+    --accent-secondary: #10B981;
+    /* Emerald 500 */
+    --accent-tertiary: #EF4444;
+    /* Red 500 */
+
+    --border-color: #334155;
+    /* Slate 700 - Stronger Border */
+
+    /* Typography */
+    --font-main: 'Inter', sans-serif;
+    --font-display: 'Space Grotesk', sans-serif;
+
+    /* Spacing */
+    --spacing-sm: 0.75rem;
+    --spacing-md: 1.5rem;
+    --spacing-lg: 3rem;
+    --spacing-xl: 5rem;
+
+    /* Neo-Brutalist Borders & Shadows */
+    --border-width: 2px;
+    /* Thicker borders */
+    --border-radius: 0px;
+    /* Sharp corners */
+
+    --shadow-sm: 2px 2px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-md: 4px 4px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-lg: 8px 8px 0px 0px rgba(0, 0, 0, 1);
+    --shadow-glow: 0 0 0 0 transparent;
+    /* No glow in brutalism */
+    --shadow-hover: 6px 6px 0px 0px var(--accent-primary);
+    /* Colored hard shadow */
+
+    /* Spacing & Layout */
+    --container-width: 1200px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: var(--font-main);
+    line-height: 1.6;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--font-display);
+    font-weight: 700;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+    color: var(--text-color);
+    text-transform: uppercase;
+}
+
+h1 {
+    font-size: 4rem;
+    letter-spacing: -0.03em;
+}
+
+h2 {
+    font-size: 3rem;
+    letter-spacing: -0.02em;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+    position: relative;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* Neo-Brutalist Components */
+/* Neo-Brutalist Components */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--accent-primary);
+    color: #FFFFFF;
+    border: var(--border-width) solid #000;
+    /* Black border for contrast */
+    padding: 1rem 2.5rem;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 1.1rem;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: all 0.1s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    white-space: nowrap;
+}
+
+.btn:hover {
+    background: var(--accent-primary-hover);
+    transform: translate(-2px, -2px);
+    box-shadow: 6px 6px 0px 0px #fff;
+    /* White shadow pop */
+}
+
+.btn:active {
+    transform: translate(2px, 2px);
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-color);
+    border-color: var(--text-color);
+}
+
+.btn-outline:hover {
+    background: var(--text-color);
+    color: #000;
+    border-color: var(--text-color);
+    box-shadow: var(--shadow-hover);
+}
+
+.section {
+    padding: 6rem 0;
+    border-bottom: var(--border-width) solid var(--border-color);
+    position: relative;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2.5rem;
+}
+
+.card {
+    background: var(--bg-secondary);
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: 2.5rem;
+    transition: all 0.2s ease;
+    position: relative;
+    box-shadow: var(--shadow-md);
+}
+
+.card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(800px circle at var(--mouse-x) var(--mouse-y), rgba(255, 255, 255, 0.06), transparent 40%);
+    opacity: 0;
+    transition: opacity 0.5s;
+    pointer-events: none;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.card:hover {
+    transform: translate(-4px, -4px);
+    border-color: var(--accent-primary);
+    box-shadow: 8px 8px 0px 0px var(--accent-primary);
+}
+
+/* Utilities */
+.text-highlight {
+    color: var(--accent-secondary);
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    h2 {
+        font-size: 2.2rem;
+    }
+
+    .section {
+        padding: 4rem 0;
+    }
+}
