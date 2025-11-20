@@ -1,0 +1,132 @@
+/* AHMZ Agency - Moneybird Invoice Style */
+
+/* 1. General Typography & Page Setup */
+.document {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    /* Clean sans-serif since custom fonts aren't allowed */
+    color: #0F172A;
+    /* Slate 900 */
+    font-size: 10pt;
+    line-height: 1.5;
+}
+
+/* 2. Headers */
+.document h1,
+.document h2,
+.document h3,
+.document h4 {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #020617;
+    /* Slate 950 */
+    letter-spacing: -0.02em;
+}
+
+/* Invoice Title (e.g., "Invoice 2025-0001") */
+.document .document-header h2 {
+    font-size: 24pt;
+    border-bottom: 4px solid #3B82F6;
+    /* AHMZ Blue Accent */
+    display: inline-block;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+/* 3. Sender Address (Top Right) */
+.document .sender-address {
+    color: #334155;
+    /* Slate 700 */
+    font-size: 9pt;
+}
+
+.document .sender-address strong {
+    color: #000;
+    font-size: 10pt;
+    text-transform: uppercase;
+}
+
+/* 4. Recipient Address */
+.document .document-recipient {
+    font-weight: 600;
+    font-size: 11pt;
+    margin-top: 40px;
+}
+
+/* 5. Invoice Details Grid (Date, Due Date, etc.) */
+.document .document-header .properties {
+    margin-top: 20px;
+}
+
+.document .document-header .properties label {
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 8pt;
+    color: #64748B;
+    /* Slate 500 */
+}
+
+/* 6. The Table (Neo-Brutalist Style) */
+.document table.document-details {
+    margin-top: 40px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+/* Table Headers */
+.document table.document-details th {
+    background-color: #F1F5F9;
+    /* Slate 100 */
+    color: #000;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 12px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    font-size: 9pt;
+}
+
+/* Table Rows */
+.document table.document-details td {
+    padding: 12px;
+    border-bottom: 1px solid #E2E8F0;
+    /* Slate 200 */
+    vertical-align: top;
+}
+
+/* Description Column */
+.document table.document-details td.description {
+    font-weight: 500;
+}
+
+/* 7. Totals Section */
+.document table.document-details td.emphasize {
+    font-weight: 700;
+    font-size: 11pt;
+    color: #000;
+}
+
+/* Total Amount Row */
+.document table.document-details tr.total-amount td {
+    border-top: 2px solid #000;
+    border-bottom: 4px solid #000;
+    /* Thick bottom border for total */
+    background-color: #F8FAFC;
+    font-size: 12pt;
+    font-weight: 900;
+}
+
+/* 8. Footer / QR Code Area */
+.document .document-footer {
+    margin-top: 50px;
+    border-top: 2px solid #3B82F6;
+    /* Blue Accent Line */
+    padding-top: 20px;
+    font-size: 8pt;
+    color: #64748B;
+}
+
+/* 9. Logo Sizing (Optional adjustment) */
+.document .logo img {
+    max-height: 80px;
+    /* Ensure logo isn't too huge */
+}

@@ -76,6 +76,7 @@
                         <p>AHMZ Agency B.V.</p>
                         <p>Prins Hendrikkade 21 E, 1012TL Amsterdam</p>
                         <p>KVK: 98277553</p>
+                        <p>VAT: NL868426696B01</p>
                     </div>
 				</div>
 				<div class="footer-col">
@@ -86,6 +87,7 @@
 				<div class="footer-col">
 					<h4>Connect</h4>
 					<a href="mailto:hello@ahmz.agency">hello@ahmz.agency</a>
+                    <a href="tel:+31627916439">+31 6 27 91 64 39</a>
                     <div class="socials">
                         <!-- Social icons placeholder -->
                     </div>

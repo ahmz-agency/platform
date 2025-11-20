@@ -68,6 +68,7 @@
                 </div>
                 <p>Prefer email? Reach us directly.</p>
                 <a href="mailto:hello@ahmz.agency" class="email-link">hello@ahmz.agency</a>
+                <p class="phone-link"><a href="tel:+31627916439">+31 6 27 91 64 39</a></p>
                 
                 <p>AHMZ Agency B.V.<br>Prins Hendrikkade 21 E<br>1012TL Amsterdam</p>
                 

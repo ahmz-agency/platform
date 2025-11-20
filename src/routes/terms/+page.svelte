@@ -32,6 +32,29 @@
             <p>
                 AHMZ Agency B.V. is liable for the quality of work delivered, subject to the limitations defined in individual service contracts.
             </p>
+
+            <h2>6. REFUND & CANCELLATION POLICY</h2>
+            <p>
+                <strong>Cancellations:</strong> Clients may cancel a project with 7 days' written notice. Work completed up to the cancellation date will be billed.
+                <br><br>
+                <strong>Refunds:</strong> Due to the nature of our services, refunds are not issued for completed milestones or time spent. If a project is cancelled before work begins, a full refund of any deposit will be issued within 14 days.
+            </p>
+
+            <h2>7. DELIVERY TERMS</h2>
+            <p>
+                <strong>Digital Delivery:</strong> All deliverables (code, designs, documents) are delivered digitally via email, secure file transfer, or version control repositories (e.g., GitHub).
+                <br><br>
+                <strong>Timeline:</strong> Delivery timelines are specified in the individual project agreement. We strive to meet all deadlines and will communicate any potential delays immediately.
+            </p>
+            <h2>8. PRICING & CURRENCY</h2>
+            <p>
+                All prices are quoted in Euros (€/EUR). All transactions are processed in Euros.
+            </p>
+
+            <h2>9. PAYMENT METHODS</h2>
+            <p>
+                We accept payments via iDEAL, Credit Card (Visa, Mastercard), and Bank Transfer. Payments are securely processed by our payment provider, Mollie.
+            </p>
         </div>
     </div>
 </section>
