@@ -228,13 +228,23 @@
     }
 
     @media (max-width: 900px) {
+        .contact-hero {
+            padding-top: 6rem;
+            padding-bottom: 2rem;
+        }
+
         .form-container {
             grid-template-columns: 1fr;
+            gap: 3rem;
         }
 
         .brutal-form {
             grid-template-columns: 1fr;
             padding: 1.5rem;
+        }
+        
+        .content-wrapper h1 {
+            font-size: 2.5rem;
         }
     }
 </style>

@@ -750,8 +750,23 @@
 
         .hero-visual, .solution-visual, .problem-visual {
             order: -1;
-            margin-bottom: 2rem;
-            height: 300px; /* Reduced height for mobile */
+            margin-bottom: 3rem;
+            height: 400px;
+            width: 100%;
+            overflow: visible;
+        }
+
+        /* Specific fix for Hero: Content first, Visual second */
+        .hero-visual {
+            order: 1; /* Push to bottom */
+            margin-bottom: 0;
+            margin-top: 2rem;
+            height: 300px; /* Compact height */
+        }
+        
+        /* Adjust shape sizes for mobile */
+        :global(.hero-visual .brutal-shape) {
+            transform: scale(0.8);
         }
         
         .cta-group {

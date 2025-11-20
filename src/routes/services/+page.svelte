@@ -305,7 +305,7 @@
         transform: translateY(0);
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         .hero-content h1 {
             font-size: 2.5rem;
         }
@@ -319,6 +319,14 @@
         
         .header-text h2 {
             font-size: 2.5rem;
+        }
+
+        .service-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .cta-content h2 {
+            font-size: 2rem;
         }
     }
 </style>

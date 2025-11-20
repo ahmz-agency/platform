@@ -327,17 +327,22 @@
         
         .visual {
             width: 100%;
-            height: 300px;
+            height: 400px; /* Increased height */
             order: -1;
+            margin-bottom: 2rem;
         }
         
         .number {
             display: none;
         }
         
-        .benefits li {
-            justify-content: center;
+        .benefits {
             text-align: left;
+            display: inline-block;
+        }
+
+        .benefits li {
+            justify-content: flex-start;
         }
     }
 </style>

@@ -271,11 +271,28 @@
         .split-layout {
             grid-template-columns: 1fr;
             text-align: center;
+            gap: 3rem;
         }
         
         .story-visual {
             order: -1;
-            height: 300px;
+            height: 400px; /* Increased height */
+            margin-bottom: 3rem;
+            width: 100%;
+        }
+
+        .three-col {
+            grid-template-columns: 1fr;
+        }
+
+        .value-card {
+            padding: 2rem;
+            min-height: auto;
+        }
+
+        .value-card h3 {
+            min-height: auto;
+            font-size: 1.5rem;
         }
     }
 </style>

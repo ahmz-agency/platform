@@ -222,13 +222,18 @@
         letter-spacing: 0.05em;
     }
 
-    @media (max-width: 768px) {
+    @media (max-width: 900px) {
         .hero-content h1 {
             font-size: 2.5rem;
         }
         
         .grid {
             grid-template-columns: 1fr;
+        }
+
+        .search-wrapper {
+            width: 100%;
+            padding: 0 1rem;
         }
     }
 </style>
